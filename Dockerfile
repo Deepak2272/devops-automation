@@ -5,8 +5,8 @@ WORKDIR /app
 
 # Copy the pre-built JAR into the image
 # Update the filename below to match what's actually in build/libs after your Gradle build
-COPY build/libs/*.jar devops-automation-0.0.1.jar
+COPY build/libs/devops-automation.jar devops-automation.jar
 
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-jar", "devops-automation-0.0.1.jar"]
+ENTRYPOINT ["java", "-jar", "devops-automation.jar"]
